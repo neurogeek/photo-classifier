@@ -7,6 +7,7 @@ PhotoClassifier is a tool to automatically create a hierarchy of photos (symlink
 What this means, is that from a Photo's EXIF info, you could have a hierarchy like this:
 (e.g. Photo.jpg taken 2010-01-07)
 
+```
 output-dir/
     | Processed
         | Photo.jpg
@@ -15,6 +16,8 @@ output-dir/
             | Photo.jpg -> ../../Photo.jpg
         | Week01 
             | Photo.jpg -> ../../Photo.jpg
+```
+
 
 The week number is taken from the startDate parameter (-s) to PhotoClassifier
 
